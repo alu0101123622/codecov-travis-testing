@@ -1,38 +1,43 @@
-istanbul cover node_modules/mocha/bin/_mocha && codecov -F istanbul_mocha
-codecov:
-  token: "08f1a0cd-798f-439b-9a64-5eaa34759419"
-  bot: "codecov-io"
-  ci:
-    - "travis.org"
-  strict_yaml_branch: "yaml-config"
-  max_report_age: 24
-  disable_default_path_fixes: no
-  require_ci_to_pass: yes
-  notify:
-    after_n_builds: 2
-    wait_for_ci: yes
+# istanbul cover node_modules/mocha/bin/_mocha && codecov -F istanbul_mocha
+# codecov:
+#   token: "c8f5a876-56b4-4bb5-bfc0-78381ccfa0bc"
+#   bot: "codecov-io"
+#   ci:
+#     - "travis.org"
+#   strict_yaml_branch: "yaml-config"
+#   max_report_age: 24
+#   disable_default_path_fixes: no
+#   require_ci_to_pass: yes
+#   notify:
+#     after_n_builds: 2
+#     wait_for_ci: yes
 
-coverage:
-  precision: 2
-  round: down
-  range: "70...100"
-  notify:
-    # notification blocks. See: https://docs.codecov.io/docs/codecovyml-reference#section-coverage-notify
-  status:
-    project:
-      default: # This can be anything, but it needs to exist as the name
-        # basic settings
-        target: auto
-        threshold: 5%
-        base: auto 
-        # advanced settings
-        branches: 
-          - master
-        if_no_uploads: error
-        if_not_found: success
-        if_ci_failed: error
-        only_pulls: false
-        flags: 
-          - frontend
-        paths: 
-          - src/frontend
+
+#     "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov -F istanbul_mocha"
+
+
+
+# coverage:
+#   precision: 2
+#   round: down
+#   range: "70...100"
+#   notify:
+#     # notification blocks. See: https://docs.codecov.io/docs/codecovyml-reference#section-coverage-notify
+#   status:
+#     project:
+#       default: # This can be anything, but it needs to exist as the name
+#         # basic settings
+#         target: auto
+#         threshold: 5%
+#         base: auto 
+#         # advanced settings
+#         branches: 
+#           - master
+#         if_no_uploads: error
+#         if_not_found: success
+#         if_ci_failed: error
+#         only_pulls: false
+#         flags: 
+#           - frontend
+#         paths: 
+#           - src/frontend

@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov -F istanbul_mocha"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
