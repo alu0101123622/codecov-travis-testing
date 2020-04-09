@@ -95,6 +95,7 @@ function() {
 
   describe("\n    Probando calculos de parteReal para Mandelbrot", function(){
     
+     
     /**
     * @description Expect para comprobar el correcto funcionamiento 
     * @param {}
